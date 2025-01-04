@@ -1,1 +1,140 @@
 pip install pandas numpy scikit-learn geopandas folium streamlit
+
+Natural Disaster Risk Analysis
+
+This project is a web-based application that predicts the risk of natural disasters like floods, earthquakes, and other calamities using historical weather and geographical data. The app provides an interactive map and visualization tools to explore disaster risks across various regions.
+
+Features
+
+1. Interactive Map
+
+Displays disaster risk levels on a map.
+
+Allows users to click and select specific locations.
+
+Uses color coding: Red for high risk, Green for low risk.
+
+2. Country Selection
+
+Users can filter data by selecting a specific country.
+
+Displays region-specific disaster risks and data insights.
+
+3. Data Insights
+
+Bar Plot: Visualizes the total number of disasters by type.
+
+Scatter Plot: Displays the relationship between disaster magnitude and damages, color-coded by risk.
+
+4. Custom Risk Prediction
+
+Users can input custom data (latitude, longitude, magnitude, etc.) and predict the risk level.
+
+5. Machine Learning Integration
+
+Trains a Random Forest model to classify disaster risk (High or Low).
+
+Provides classification accuracy and performance metrics.
+
+Setup and Installation
+
+Prerequisites
+
+Python 3.7+
+
+Libraries: streamlit, folium, streamlit-folium, pandas, numpy, scikit-learn, plotly
+
+Installation Steps
+
+Clone the repository:
+
+git clone https://github.com/your-repository/natural-disaster-risk-analysis.git
+cd natural-disaster-risk-analysis
+
+Install the required Python libraries:
+
+pip install -r requirements.txt
+
+Place your dataset (processed_disaster_data.csv) in the project directory.
+
+Run the application:
+
+streamlit run app.py
+
+File Structure
+
+.
+├── app.py                  # Main application file
+├── processed_disaster_data.csv # Dataset file
+├── requirements.txt        # Dependencies file
+└── README.md               # Documentation file
+
+How to Use
+
+Launch the application using streamlit run app.py.
+
+Explore the Dataset Preview to view the uploaded data.
+
+Select a Country from the dropdown menu to filter data.
+
+View the Disaster Risk Map and enable the checkbox to visualize risk levels.
+
+Check the Data Insights section for bar and scatter plots.
+
+Use the Custom Prediction section in the sidebar to input custom data and get predictions.
+
+Dataset Requirements
+
+Columns:
+
+latitude: Latitude of the region.
+
+longitude: Longitude of the region.
+
+magnitude: Magnitude or severity of the disaster.
+
+deaths: Number of deaths reported.
+
+affected: Number of people affected.
+
+damages: Financial damages caused.
+
+country: Country name.
+
+risk: Binary value (0 = Low Risk, 1 = High Risk).
+
+Technologies Used
+
+Frontend:
+
+Streamlit for user interface.
+
+Folium for map visualization.
+
+Backend:
+
+Python for processing and analysis.
+
+Random Forest Classifier for risk prediction.
+
+Data Visualization:
+
+Plotly for bar and scatter plots.
+
+Future Enhancements
+
+Add more granular filtering options (e.g., state or city).
+
+Include additional disaster types (e.g., drought, landslides).
+
+Implement a more advanced prediction model (e.g., XGBoost or Neural Networks).
+
+Provide downloadable reports based on user analysis.
+
+Contact
+
+Developer: Kesavan
+
+Website: kesavan.site
+
+Feel free to reach out for queries or suggestions!
